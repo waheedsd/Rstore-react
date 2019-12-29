@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 29 2019 22:45:32 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/components/Cart/Cart.js
+* src/components/Cart/CartTotals.js
+
+
+Created files:
+* src/components/Cart/PaypalButton.js
+
+
+Deleted files:
+
+
+Renamed files:
