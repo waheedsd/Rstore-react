@@ -53,7 +53,7 @@ class ProductProvider extends Component {
         const product = tempProducts[index];
         product.inCart = true;
         product.count= 1;
-        const price = product.pice;
+        const price = product.price;
         product.total = price;
 
         this.setState(()=>{
@@ -124,7 +124,7 @@ class ProductProvider extends Component {
         );
             
     }
-    clearCart = (id)=>{
+    clearCart = ()=>{
         this.setState(()=>{
             return{cart:[]};
         },()=>{
@@ -136,9 +136,8 @@ class ProductProvider extends Component {
         let subTotal = 0;
         this.state.cart.map(item =>(subTotal += item.total
         )); 
-        console.log(subTotal);
         const tempTax = subTotal * 0.1;
-        console.log(tempTax, subTotal);
+        //console.log(tempTax, subTotal);
         const tax = parseFloat(tempTax.toFixed(2));
         const total = subTotal + tax;
         this.setState(()=>{
